@@ -15,7 +15,12 @@ public class Agenda {
     private HashMap<String, Contacto> contactos = new HashMap();
     private static int n = 0;
     private static int count = 0;
- 
+
+    Agenda() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+   
+     
     /**
      * Añade un contacto a la agenda
      * @param contacto Contacto que queremos añadir
@@ -78,6 +83,22 @@ public class Agenda {
         return contactosList;
     }
     
+    private static String nombreAgenda="";
+
+    public String getnombreAgenda(Agenda a){
+            return this.nombreAgenda;
+    }
+    public void setnombreAgenda(String name){
+            this.nombreAgenda=name;
+    }
+
+    public Agenda(String name){
+    
+        if (name != ""){
+            this.nombreAgenda = name;
+        }
+        else this.nombreAgenda ="Untitled";
+    }   
     
 
 }
