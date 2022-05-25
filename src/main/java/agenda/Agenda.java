@@ -37,7 +37,7 @@ public class Agenda {
 
     /**
      * Elimina contacto
-     * @param email
+     * @param email Contacto que queremos eliminar
      * @return Devuelve el contacto si lo eliminia y si no un null
      */
     
@@ -52,7 +52,7 @@ public class Agenda {
 
     /**
      * Busca un contacto
-     * @param email
+     * @param email Contacto que queremos buscar
      * @return Nulo si el contacto no está, y si está te muestra el contacto
      */
     
